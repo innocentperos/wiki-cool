@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wikipedia</title>
+
+  <link rel="stylesheet" href="/assets/css/boxicons.min.css">
+  <script src="/assets/js/tailwindcss3.0.js"></script>
+
+</head>
+
+<body class="w-screen h-screen bg-slate-900 grid grid-rows-[65px_auto] text-white relative">
+
+  <img src="/assets/images/bg.jpg" class="absolute -top-1 object-cover h-64 w-full">
+
+  <div class="absolute top-0 w-full h-64 bg-gradient-to-b from-slate-900/70 via-slate-900 to-slate-900 ">
+
+  </div>
+
+  <header class="relative before:absolute before:h-px before:w-full before:bg-gradient-to-l before:from-white/0 before:to-white/0 before:via-white/40 before:bottom-0 flex items-center justify-between z-10">
+
+    <div class="">
+      <div id="navigator-btn" class="bx bx-menu text-xl p-4"></div>
+      <span class="text-lg font-bold tracking-wider">Wikipedia</span>
+    </div>
+    <div class="text-xl aspect-square bx bx-search ml-auto mr-4 m-3"></div>
+
+  </header>
+
+  <div class="grid w-full md:grid-cols-[1fr_2fr] h-full overflow-auto relative">
+    <div id="navigator" class="fixed top-0 md:static z-10 bg-slate-800/50 backdrop-blur-lg h-full w-full md:w-full duration-200 -translate-x-full md:translate-x-0 z-20 flex flex-col">
+      <header class="h-[65px] relative md:hidden before:absolute before:h-px before:w-full before:bg-gradient-to-l before:from-white/0 before:to-white/0 before:via-white/40 before:bottom-0 flex items-center justify-between z-10">
+
+        <div class="">
+          <div class="bx bxl-wikipedia text-xl p-4"></div>
+          <span class="text-lg font-bold tracking-wider">Wikipedia</span>
+        </div>
+        <div id="navigator-close-btn" class="text-xl aspect-square bx bx-x ml-auto mr-4 m-3"></div>
+
+      </header>
+
+    </div>
+    <main class="h-auto w-full overflow-y-auto p-3 z-10 space-y-8">
+
+      <section class=" p-4 py-10 rounded-md flex overflow-x-auto flex-col items-center justify-center">
+
+        <span id="counter" class="text-4xl font-bold tracking-wider">0</span>
+        <span>articles</span>
+      </section>
+
+      <section name="feature-articles" class="bg-[#0C3852]/80 p-3 rounded-lg flex overflow-x-auto flex-col relative">
+        <div class="bx bxs-hot absolute text-6xl scale-[8] top-0 left-0 -z-10 text-red-500"></div>
+        <span class="my-3 font-bold text-3xl">Features Articles</span>
+
+        <div class="w-full overflow-auto flex space-x-5">
+          <div class="w-2/3 min-w-[240px] aspect-[1/1.5] rounded-md bg-white/10 flex flex-col p-3 shadow">
+
+            <div class="w-full h-2/3 rounded-md relative overflow-hidden">
+              <img src="/assets/images/1.jpg" class="object-cover w-full top-0 h-full" alt="">
+            </div>
+
+            <span class="text-lg mt-2">
+              Nigeria History
+            </span>
+            <span class="text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloremque vitae cumque repellat fugit nostrum rem incidunt quo corrupti, vel?
+            </span>
+            <div class="w-full overflow-x-auto flex space-x-1 mt-2 rounded-full">
+              <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+                Nigeria
+              </div>
+              <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+                Africa
+              </div>
+              <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+                Buhari Mahammed
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="w-2/3 min-w-[240px] aspect-[1/1.5] rounded-md bg-white/10 flex flex-col p-3 ">
+
+            <div class="w-full h-2/3 rounded-md relative overflow-hidden">
+              <img src="/assets/images/2.jpg" class="object-cover w-full top-0 h-full" alt="">
+            </div>
+
+            <span class="text-lg mt-2">
+              The history of web
+            </span>
+            <span class="text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloremque vitae cumque repellat fugit nostrum rem incidunt quo corrupti, vel?
+            </span>
+
+          </div>
+
+
+          <div class="w-2/3 min-w-[240px] aspect-[1/1.5] rounded-md bg-white/10 flex flex-col p-3 ">
+
+            <div class="w-full h-2/3 rounded-md relative overflow-hidden">
+              <img src="/assets/images/3.jpg" class="object-cover w-full top-0 h-full" alt="">
+            </div>
+
+            <span class="text-lg mt-2">
+              The history of web
+            </span>
+            <span class="text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloremque vitae cumque repellat fugit nostrum rem incidunt quo corrupti, vel?
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <section name="did-you-know" class="flex flex-col">
+        <span class="my-3">Did you know</span>
+        <div class="w-full overflow-x-auto rounded-lg flex space-x-5">
+          <div class="flex items-center space-x-2 h-[80px] p-3 bg-black/50 rounded-lg">
+            <img src="/assets/images/6.jpg" class="aspect-square h-full rounded-md">
+            <span class="text-xs w-[250px]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam magni quidem pariatur fugit quos, labore nesciunt.
+            </span>
+          </div>
+          <div class="flex items-center space-x-2 h-[80px] p-3 bg-black/50 rounded-lg">
+            <img src="/assets/images/5.jpg" class="aspect-square h-full rounded-md">
+            <span class="text-xs w-[250px]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam magni quidem pariatur fugit quos, labore nesciunt.
+            </span>
+          </div>
+
+        </div>
+      </section>
+
+      <section name="feature-news" class="bg-[#E65303]/80 rounded-lg flex overflow-x-auto flex-col relative">
+        <div class="bx bxs-news absolute text-6xl scale-[8] top-0 left-0 -z-10 text-red-500"></div>
+        <span class="my-3 font-bold text-3xl p-3">Features News</span>
+        <div class="w-full">
+          <div class="w-full rounded-md bg-white/0 flex flex-col shadow p-3">
+
+            <div class="w-full h-2/3 rounded-md relative overflow-hidden">
+              <img src="/assets/images/12.jpg" class="object-cover w-full top-0 w-full object-center aspect-video" alt="">
+            </div>
+
+            <span class="text-lg mt-2">
+              The history of web
+            </span>
+            <span class="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+            </span>
+
+          </div>
+          <div class="text-sm p-3 relative after:absolute before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-l before:from-white/10 before:via-white/50 before:to-white/10 flex space-x-3 tracking-wider">
+
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus similique possimus adipisci, obcaecati, et nesciunt, deleniti quis assumenda</span>
+
+          </div>
+          <div class="text-sm p-3 relative after:absolute before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-l before:from-white/10 before:via-white/50 before:to-white/10 flex space-x-3 tracking-wider">
+
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus similique possimus adipisci, obcaecati, et nesciunt, deleniti quis assumenda</span>
+
+          </div>
+          <div class="text-sm p-3 relative after:absolute before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-gradient-to-l before:from-white/10 before:via-white/50 before:to-white/10 flex space-x-3 tracking-wider">
+
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus similique possimus adipisci, obcaecati, et nesciunt, deleniti quis assumenda</span>
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <section name="from-today-feature" class="bg-[#657482]/80 rounded-lg space-y-3 flex flex-col p-3">
+        <div class="my-5 mb-3 text-xl font-bold">
+          <span>From today's featured list</span>
+        </div>
+        <img class="w-full object-cover aspect-[1/0.7] rounded-lg" src="/assets/images/7.jpg" alt="">
+        <div>
+          The Sayfo, or Assyrian genocide, was the mass slaughter and deportation of Assyrian and Syriac Christians in southeastern Anatolia and Persia's Azerbaijan province committed by Ottoman forces and Kurdish tribes during World War I. <br> The Assyrians lived in mountainous and remote areas and were divided into several mutually antagonistic churches. Mass killing of Assyrian civilians began in January 1915, by the Ottoman military and pro-Ottoman Kurds. <br> Att acks on, massacres of and deportations of Christian populations continued until 1919, usually facing only sporadic armed resistance. Ottoman Assyrians living in present-day Iraq and Syria were not targeted.
+          <br>
+          <div class="w-full overflow-x-auto flex space-x-1 mt-2 rounded-full">
+            <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+              Nigeria
+            </div>
+            <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+              Africa
+            </div>
+            <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+              Buhari Mahammed
+            </div>
+
+          </div>
+
+          <div class="w-full bg-white/10 p-4 rounded-lg flex items-center justify-center mt-3 shadow">
+            Read More
+          </div>
+        </div>
+
+      </section>
+
+      <section name="on-this-day" class="bg-[#754A52]/80 p-3 rounded-lg flex overflow-x-auto flex-col relative">
+        <div class="bx bxs-calendar-alt absolute text-6xl scale-[8] top-0 left-0 -z-10 text-red-500"></div>
+        <span class="my-3 font-bold text-3xl">On This Day</span>
+
+        <div class="w-full overflow-auto flex space-x-5">
+          <div class="w-2/3 min-w-[240px] aspect-[1/1.5] rounded-md bg-white/10 flex flex-col p-3 shadow">
+
+            <div class="w-full h-2/3 rounded-md relative overflow-hidden">
+              <img src="/assets/images/12.jpg" class="object-cover w-full top-0 h-full" alt="">
+            </div>
+
+            <span class="text-lg mt-2">
+              1985
+            </span>
+            <span class="text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloremque vitae cumque repellat fugit nostrum rem incidunt quo corrupti, vel?
+            </span>
+            <div class="w-full overflow-x-auto flex space-x-1 mt-2 rounded-full">
+              <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+                Nigeria
+              </div>
+              <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+                Africa
+              </div>
+              <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+                Buhari Mahammed
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="w-2/3 min-w-[240px] aspect-[1/1.5] rounded-md bg-white/10 flex flex-col p-3 ">
+
+            <div class="w-full h-2/3 rounded-md relative overflow-hidden">
+              <img src="/assets/images/11.jpg" class="object-cover w-full top-0 h-full" alt="">
+            </div>
+
+            <span class="text-lg mt-2">
+              1986
+            </span>
+            <span class="text-xs">
+              American test pilot Chuck Yeager became the first person to break the sound barrier, reaching Mach 1.06 on board the Bell X-1, an experimental rocket-powered aircraft.
+            </span>
+
+          </div>
+
+
+          <div class="w-2/3 min-w-[240px] aspect-[1/1.5] rounded-md bg-white/10 flex flex-col p-3 ">
+
+            <div class="w-full h-2/3 rounded-md relative overflow-hidden">
+              <img src="/assets/images/9.jpg" class="object-cover w-full top-0 h-full" alt="">
+            </div>
+
+            <span class="text-lg mt-2">
+              2012
+            </span>
+            <span class="text-xs">
+              Michael Woodford was dismissed as the CEO of the optics manufacturer Olympus after uncovering internal financial misconduct, escalating the corporate scandal into one of the largest in Japanese business history.
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </section>
+      <section name="from-today-feature" class="bg-[#AA6F8C]/50 rounded-lg space-y-3 flex flex-col p-3">
+        <div class="my-5 mb-3 text-xl font-bold">
+          <span>Today's featured picture</span>
+        </div>
+        <img class="w-full object-cover aspect-[1/0.7] rounded-lg" src="/assets/images/13.jpg" alt="">
+        <div>
+          <span>
+            A mudpot, or mud pool, is a type of acidic hot spring, or fumarole, with limited water. It usually takes the form of a pool of bubbling mud. The acid and microorganisms decompose surrounding rock into clay and mud. <br>The mud of a mudpot takes the form of a viscous, often bubbling, slurry. As the boiling mud is often squirted over the brims of the mudpot, a sort of mini-volcano of mud starts to build up, sometimes reaching heights of <br>1 to 1.5 meters (3 to 5 ft). The mud is generally of white to greyish color, sometimes stained with reddish or pink spots from iron compounds. When the slurry is particularly colorful, the feature may be referred to as a paint pot. This video of a bubbling mudpot was captured in Lassen Volcanic National Park in northern California.
+          </span>
+          <div class="w-full overflow-x-auto flex space-x-1 mt-2 rounded-full">
+            <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+              Nigeria
+            </div>
+            <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+              Africa
+            </div>
+            <div class="shrink-0 p-1 rounded-full text-xs bg-black/20 px-3 ">
+              Buhari Mahammed
+            </div>
+
+          </div>
+
+          <div class="w-full bg-white/10 p-4 rounded-lg flex items-center justify-center mt-3 shadow">
+            Read More
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
